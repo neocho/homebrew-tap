@@ -4,15 +4,15 @@
 class Ducky < Formula
   desc "Record a login session so Ducky can demo behind your app's login"
   homepage "https://tryducky.dev"
-  version "0.4.3"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/neocho/homebrew-tap/releases/download/cli-v0.4.3/ducky-darwin-arm64.tar.gz"
-      sha256 "da16eb95adf15c0a0a1ae3cb29a66d5916e2e41ac59093de73ac550fdb50af3a"
+      url "https://github.com/neocho/homebrew-tap/releases/download/cli-v0.5.0/ducky-darwin-arm64.tar.gz"
+      sha256 "fb48ef07e48023b038e14efabd3c7e1fb44d2ab388a35f8cd0d743423cd447d9"
     else
-      url "https://github.com/neocho/homebrew-tap/releases/download/cli-v0.4.3/ducky-darwin-amd64.tar.gz"
-      sha256 "3ce0e07d316cb3f2ecab117600c7348790dba962b68737422b1c84de1e68445a"
+      url "https://github.com/neocho/homebrew-tap/releases/download/cli-v0.5.0/ducky-darwin-amd64.tar.gz"
+      sha256 "6781b39a5fed82200dabe778999200f9473449528ee6fc2187e886ddb1b58e06"
     end
   end
 
@@ -21,6 +21,6 @@ class Ducky < Formula
   end
 
   test do
-    assert_match "0.4.3", shell_output("#{bin}/ducky version")
+    assert_match "0.5.0", shell_output("#{bin}/ducky version")
   end
 end
