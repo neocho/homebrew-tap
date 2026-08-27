@@ -9,10 +9,10 @@ class Ducky < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/neocho/homebrew-tap/releases/download/cli-v0.7.0/ducky-darwin-arm64.tar.gz"
-      sha256 "490c5a89835cc67fa22e769fcbd73f7811e5cdce65519be7bf295842f6b5bb69"
+      sha256 "9a018b0a07284d591847adff536f6af8842a79bb3d77ff0c2aced0a0761fa2e7"
     else
       url "https://github.com/neocho/homebrew-tap/releases/download/cli-v0.7.0/ducky-darwin-amd64.tar.gz"
-      sha256 "4dffa2fc2e52537605d308864042f07c741ca78713151afc363e92c404e25d90"
+      sha256 "c11973e13e7f36292f3e82d5de7cde4219f27f3816156e7544e03babb1c6c4a8"
     end
   end
 
